@@ -1,0 +1,105 @@
+/* ==========================
+   ScholarAI Theme
+========================== */
+
+:root {
+    --bg: #f7f3ec;
+    --card: #ffffff;
+    --primary: #7b5e57;
+    --secondary: #d9c8b4;
+    --text: #2d2d2d;
+    --border: #ece5db;
+}
+
+html,
+body,
+.stApp {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Sidebar */
+
+section[data-testid="stSidebar"] {
+    background: #efe7dc;
+    border-right: 1px solid var(--border);
+}
+
+/* Buttons */
+
+.stButton>button {
+    width: 100%;
+    border-radius: 14px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.stButton>button:hover {
+    background: #5c433d;
+    transform: translateY(-2px);
+}
+
+/* Cards */
+
+div[data-testid="stVerticalBlock"] {
+    border-radius: 16px;
+}
+
+/* Tabs */
+
+button[data-baseweb="tab"] {
+    border-radius: 12px;
+}
+
+/* Chat Messages */
+
+.stChatMessage {
+    border-radius: 18px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+/* Inputs */
+
+textarea {
+    border-radius: 14px !important;
+}
+
+/* Download Button */
+
+.stDownloadButton>button {
+    border-radius: 14px;
+}
+
+/* Headers */
+
+h1,
+h2,
+h3 {
+    color: #4f3d36;
+}
+
+/* ================= HERO SECTION ================= */
+
+.hero-section {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-title {
+    font-size: 42px;
+    color: #6B4F3B;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: #8A7A6F;
+}
