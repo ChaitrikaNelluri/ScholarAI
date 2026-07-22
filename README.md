@@ -1,125 +1,169 @@
+<div align="center">
+
 # 📚 ScholarAI
 
-> **An AI-Powered Research Paper & Study Assistant built with Retrieval-Augmented Generation (RAG), Streamlit, Gemini AI, and ChromaDB.**
+### *Transforming PDFs into an Intelligent Learning Experience*
 
-ScholarAI helps students, researchers, and professionals interact with PDF documents using AI. Instead of reading lengthy research papers manually, users can upload PDFs and ask questions, generate summaries, create quizzes, flashcards, study notes, mind maps, and personalized study plans—all in one place.
+An AI-powered Research Paper & Study Assistant that enables users to chat with documents, generate summaries, create quizzes, flashcards, study notes, mind maps, and personalized study plans using Retrieval-Augmented Generation (RAG).
 
----
+<p>
 
-## 🚀 Features
+![Python](https://img.shields.io/badge/Python-3.11+-blue?style=for-the-badge&logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web_App-red?style=for-the-badge&logo=streamlit)
+![Gemini](https://img.shields.io/badge/Google-Gemini_AI-green?style=for-the-badge)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-Vector_Database-orange?style=for-the-badge)
 
-### 💬 AI Chat
-- Ask questions about uploaded PDF documents
-- Context-aware responses using RAG
-- Natural language interaction
+</p>
 
-### 📄 AI Summary
-- Generate concise summaries
-- Capture the main ideas instantly
-
-### 📝 Study Notes
-- Convert lengthy documents into organized notes
-- Easy to revise before exams
-
-### 🎯 Key Points
-- Extract important concepts
-- Highlight essential information
-
-### ❓ AI Quiz Generator
-- Automatically generate multiple-choice quizzes
-- Evaluate understanding of the uploaded document
-
-### 📇 Flashcards
-- AI-generated question-answer flashcards
-- Great for quick revision
-
-### 🧠 Mind Map Generator
-- Convert document content into structured mind maps
-- Understand relationships between concepts
-
-### 📅 AI Study Planner
-- Generate personalized study schedules
-- Customize based on study duration and daily study hours
+</div>
 
 ---
 
-# 🏗️ System Architecture
+# 🌟 Overview
 
+Reading research papers, textbooks, and technical PDFs can be time-consuming.
+
+**ScholarAI** acts as an intelligent study companion that understands your uploaded documents and allows you to interact with them naturally.
+
+Instead of searching page by page, simply ask questions in plain English and receive context-aware answers powered by AI.
+
+ScholarAI also helps learners prepare efficiently by automatically generating:
+
+- 📄 Summaries
+- 📝 Study Notes
+- 🎯 Key Points
+- ❓ AI Quizzes
+- 📇 Flashcards
+- 🧠 Mind Maps
+- 📅 Personalized Study Plans
+
+---
+
+# ✨ Key Features
+
+## 💬 Chat with Documents
+
+- Upload PDF files
+- Ask questions naturally
+- Context-aware AI responses
+- Retrieval-Augmented Generation (RAG)
+
+---
+
+## 📄 AI Summary
+
+Generate concise summaries from lengthy documents within seconds.
+
+---
+
+## 📝 Smart Study Notes
+
+Convert complex documents into well-structured notes for quick revision.
+
+---
+
+## 🎯 Key Points Extraction
+
+Automatically identify the most important concepts and highlights.
+
+---
+
+## ❓ Quiz Generator
+
+Generate multiple-choice quizzes to test your understanding.
+
+- Instant scoring
+- Correct answer evaluation
+- Interactive learning
+
+---
+
+## 📇 Flashcards
+
+Create AI-generated flashcards for efficient revision.
+
+- Question
+- Answer
+- Easy navigation
+
+---
+
+## 🧠 Mind Map Generator
+
+Visualize document concepts as structured hierarchical text.
+
+---
+
+## 📅 AI Study Planner
+
+Generate personalized study schedules based on:
+
+- Study duration
+- Daily study hours
+
+---
+
+# 🏗 Architecture
+
+```text
+                  PDF Upload
+                       │
+                       ▼
+              PDF Text Extraction
+                       │
+                       ▼
+                 Text Chunking
+                       │
+                       ▼
+           Sentence Embeddings
+                       │
+                       ▼
+            ChromaDB Vector Store
+                       │
+                       ▼
+             Semantic Retrieval
+                       │
+                       ▼
+                Google Gemini AI
+                       │
+                       ▼
+      ┌─────────────────────────────────┐
+      │ Chat │ Summary │ Quiz │ Notes   │
+      │ Flashcards │ Mind Map │ Planner │
+      └─────────────────────────────────┘
 ```
-               PDF Upload
-                    │
-                    ▼
-            PDF Text Extraction
-                    │
-                    ▼
-              Text Chunking
-                    │
-                    ▼
-          Sentence Embeddings
-                    │
-                    ▼
-              ChromaDB Storage
-                    │
-                    ▼
-          Semantic Retrieval (RAG)
-                    │
-                    ▼
-            Google Gemini AI
-                    │
-                    ▼
-      Chat • Summary • Notes • Quiz
- Flashcards • Mind Map • Study Planner
-```
 
 ---
 
-# 🛠️ Tech Stack
+# 🛠 Tech Stack
 
-## Frontend
-
-- Streamlit
-
-## Backend
-
-- Python
-
-## AI & LLM
-
-- Google Gemini
-- Sentence Transformers
-
-## Vector Database
-
-- ChromaDB
-
-## PDF Processing
-
-- PyMuPDF
-
-## Retrieval-Augmented Generation
-
-- LangChain
-
-## Machine Learning
-
-- Hugging Face Sentence Transformers
+| Category | Technologies |
+|-----------|--------------|
+| Language | Python |
+| Frontend | Streamlit |
+| LLM | Google Gemini |
+| RAG | LangChain |
+| Embeddings | Sentence Transformers |
+| Vector Database | ChromaDB |
+| PDF Processing | PyMuPDF |
+| Environment | Python Virtual Environment |
 
 ---
 
 # 📂 Project Structure
 
-```
-ScholarAI/
+```text
+ScholarAI
 │
 ├── app.py
 ├── config.py
 ├── requirements.txt
 ├── .env
 │
-├── assets/
+├── assets
 │   └── style.css
 │
-└── modules/
+└── modules
     ├── chat_manager.py
     ├── document_manager.py
     ├── embeddings.py
@@ -136,53 +180,65 @@ ScholarAI/
 
 ---
 
-# ⚙️ Installation
+# 🚀 Getting Started
 
-Clone the repository
+## Clone the Repository
 
 ```bash
 git clone https://github.com/ChaitrikaNelluri/ScholarAI.git
 ```
 
-Move into the project directory
+---
+
+## Navigate into the Project
 
 ```bash
 cd ScholarAI
 ```
 
-Create a virtual environment
+---
+
+## Create a Virtual Environment
 
 ```bash
 python -m venv venv
 ```
 
-Activate the virtual environment
+---
 
-Windows
+## Activate the Environment
+
+### Windows
 
 ```bash
 venv\Scripts\activate
 ```
 
-Linux / macOS
+### Linux/macOS
 
 ```bash
 source venv/bin/activate
 ```
 
-Install dependencies
+---
+
+## Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Create a `.env` file
+---
+
+## Create a `.env` File
 
 ```env
-GOOGLE_API_KEY=YOUR_GEMINI_API_KEY
+GOOGLE_API_KEY=YOUR_API_KEY
 ```
 
-Run the application
+---
+
+## Run the Application
 
 ```bash
 streamlit run app.py
@@ -190,76 +246,84 @@ streamlit run app.py
 
 ---
 
-# 💡 How It Works
+# ⚙️ How ScholarAI Works
 
 1. Upload one or more PDF documents.
-2. ScholarAI extracts the text.
-3. The text is divided into chunks.
-4. Each chunk is converted into embeddings.
-5. Embeddings are stored in ChromaDB.
-6. Relevant chunks are retrieved using semantic search.
-7. Gemini AI generates accurate, context-aware responses.
+2. Extract text from PDFs.
+3. Split text into meaningful chunks.
+4. Generate embeddings.
+5. Store embeddings inside ChromaDB.
+6. Retrieve relevant content using semantic similarity.
+7. Generate AI responses with Google Gemini.
+8. Display answers and learning resources to the user.
 
 ---
 
 # 📸 Screenshots
 
-Add screenshots here after deployment.
+> Add screenshots after deployment.
 
-Example:
-
-```
-Home Page
-
-Chat Interface
-
-Quiz Generator
-
-Flashcards
-
-Mind Map
-
-Study Planner
-```
+- Home Page
+- Chat Interface
+- Summary
+- Quiz
+- Flashcards
+- Mind Map
+- Study Planner
 
 ---
 
-# 🔮 Future Improvements
+# 🎯 Future Roadmap
 
-- Voice interaction
-- Multi-document chat
-- Citation support
-- PDF highlighting
-- Conversation memory
-- User authentication
-- Dark mode
-- Export notes as PDF
-- Export flashcards
-- Research paper comparison
-- AI presentation generator
+- 🎤 Voice Interaction
+- 📚 Multi-document Chat
+- 📑 Citation Support
+- 📌 PDF Highlighting
+- 🧠 Conversation Memory
+- 👤 User Authentication
+- 🌙 Dark Mode
+- 📤 Export Notes as PDF
+- 📊 AI Analytics Dashboard
+- 🤖 Research Paper Comparison
+- 🎞 AI Presentation Generator
 
 ---
 
 # 🤝 Contributing
 
-Contributions, suggestions, and improvements are welcome.
+Contributions, suggestions, and feature requests are always welcome.
 
-Feel free to fork the repository, create a new branch, and submit a pull request.
+If you'd like to improve ScholarAI:
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Submit a Pull Request
 
 ---
 
-# 📄 License
+# 📜 License
 
 This project is licensed under the MIT License.
 
 ---
 
-# 👩‍💻 Author
+# 👩‍💻 Developer
 
-**Chaitrika Chowdary**
+## Chaitrika Chowdary
 
-- GitHub: https://github.com/ChaitrikaNelluri
+Computer Science & Information Technology Student
+
+Passionate about Artificial Intelligence, Machine Learning, Data Science, and building AI-powered applications that solve real-world problems.
+
+GitHub: https://github.com/ChaitrikaNelluri
 
 ---
 
-⭐ If you found this project useful, consider giving it a star!
+<div align="center">
+
+### ⭐ If you like ScholarAI, consider giving it a Star!
+
+*"Making research and learning smarter with AI."*
+
+</div>
